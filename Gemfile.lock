@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/radar/by_star
+  revision: 3cd30c615de41ddd041073d57db733c988376d0f
+  specs:
+    by_star (2.0.0.beta1)
+      activerecord (~> 3.0)
+      chronic
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,6 +38,7 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     builder (3.0.4)
+    chronic (0.9.1)
     coderay (1.0.9)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -47,6 +56,9 @@ GEM
     jquery-rails (2.2.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-ui-rails (4.0.2)
+      jquery-rails
+      railties (>= 3.1.0)
     json (1.7.7)
     libv8 (3.11.8.13)
     mail (2.5.3)
@@ -120,8 +132,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  by_star!
   coffee-rails (~> 3.2.1)
   jquery-rails
+  jquery-ui-rails
   nested_form
   pg
   pry

@@ -1,0 +1,20 @@
+// Place all the styles related to the Statistics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#tabela_resultados{
+	table, th, td, caption
+	{
+		border: 1px solid black;
+		vertical-align: middle;
+	}
+
+	td{
+		text-align: center;
+		min-width: 175px;
+	}
+
+	tr{
+		height: 30px;
+	}
+}

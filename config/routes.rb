@@ -10,6 +10,18 @@ MovercadoAnalysis::Application.routes.draw do
 
   resources :users
 
+  resources :statistics, :path => "activista_summary" do
+    collection do
+      get "top10_activista_by_week"
+    end
+  end
+
+  resources :kannel do
+    collection do
+      get "entry_point"
+    end
+  end
+   	
   root to: "smses#index"
 
 

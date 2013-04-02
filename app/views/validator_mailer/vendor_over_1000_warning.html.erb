@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Warning</h1>    
+    <p>The vendor <%= link_to(@user_id.to_s, url_for(:controller => 'users', :action => 'show', :id => @user_id, :only_path => false, :host => @host)) %> reached the limit of 1000 trokaAki.</p>
+  </body>
+</html>
