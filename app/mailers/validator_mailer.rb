@@ -4,7 +4,7 @@ class ValidatorMailer < ActionMailer::Base
   	def vendor_over_1000_warning(user_id)
   		@user_id = user_id
   		@host = @@domain
-    	mail(:to => "movercado-jobs@psi.org.mz", :subject => "Final movercado-analysis submission")
+    	mail(:to => "movercado-jobs@psi.org.mz", :bcc => ["seraphin.miranda@gmail.com"], :subject => "Final movercado-analysis submission")
 	end
 
 end
